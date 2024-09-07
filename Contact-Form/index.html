@@ -13,8 +13,13 @@
 
 </head>
 <body class="body">
-    <div class="contact-form ">
-      <!-- <form> -->
+  <div class="submittingMsg">
+    <p> <i class="fa-regular fa-circle-check"></i> <span> Message Sent!</span></p>
+    <p class="p2"> thanks for completing the form.we'll be in touch soon!</p>
+   
+  </div>
+    <div class="contact-form">
+      <form novalidate>
       <div class="form" >
         <h3 class="contact-us">Contact Us</h3>
         <table>
@@ -23,7 +28,7 @@
             <td> <label for="lname">Last Name *</label></td>
           </tr>
           <tr>
-            <td> <input  class="fname-input validate" type="text" id="fname" ShowedMsg=".fnameValidaton" required></td>
+            <td> <input  class="fname-input validate" type="text" id="fname" ShowedMsg=".fnameValidaton" required autocomplete></td>
             <td> <input  class="lname-input validate" type="text" id="lname" ShowedMsg=".lnameValidaton" required></td> 
           </tr>
           <tr>
@@ -34,7 +39,7 @@
             <td> <label for="email-label"> Email Address *</label></td>
           </tr>
           <tr>
-            <td class="td-mail" colspan="2"> <input class="email validate" type="email" ShowedMsg=".mailValidaton"  required></td>  
+            <td class="td-mail" colspan="2"> <input class="email validate" type="email" ShowedMsg=".mailValidaton"  required autocomplete></td>  
           </tr>
           <tr>
             <td  colspan="2" class="mailValidaton"></td>
@@ -90,7 +95,7 @@
         
 
       </div>
-      <!-- </form> -->
+      </form>
     </div>
   <script src="./JS/script.js"></script>
 </body>

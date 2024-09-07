@@ -5,15 +5,15 @@
     background-color:hsl(148, 38%, 91%);
 }
 .form {
-    width: 500px;
+    width: 530px;
     background-color: hsl(0, 0%, 100%);
-    margin:60px auto;
-    padding-left: 20px; 
+    margin:120px auto;
+    padding-left: 35px; 
     border-radius: 10px; 
     font-family:"karla";
     font-weight: 400px;
     color:hsl(187, 24%, 22%) ;
-    
+        
     
 }
 .input-radio {
@@ -81,5 +81,25 @@ input:hover {
     margin-bottom: 1px;
     margin-top: 3px;
  }
- 
+ .submittingMsg {
+   width: 435px;
+   background-color: black;
+   color: white;
+   position: absolute;
+   left: 460px;
+   top:20px;
+   padding:20px;
+   border-radius: 20px;
+   font-family:"karla";
+   display: none;
+ }
 
+ .submittingMsg  span {
+   margin-left: 10px;
+ }
+ .p2 {
+   margin-top: -10px;
+ }
+ tr {
+   margin-left: auto;
+ }
