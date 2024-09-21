@@ -1,0 +1,139 @@
+* {
+   box-sizing: border-box;
+}
+.body {
+   background-color: hsl(20, 50%, 98%);
+   font-family: "Red Hat Text";   
+}
+.products{
+   width: 90%;
+   margin: auto;   
+}
+.product {
+   /* margin-right: 20px; */
+   margin-right: 20px;
+   margin-top: 20px;
+   position: relative;
+   margin-bottom: 20px;
+
+}
+.desserts-section h3 {
+   font-weight: 700;
+   margin:60px 200px 10px 40px ;
+   
+}
+
+.your-cart {
+   background-color: white;
+   margin-left: auto;
+   width:350px;
+   height: fit-content;
+   margin-top: 40px;
+   padding: 20px;
+   border-radius: 10px;
+   color:hsl(13, 59%, 53%)  ;
+   
+}
+.your-cart .p1 {
+   font-weight: 700;
+   font-size: 20px;  
+}
+
+.your-cart div ,.your-cart .p2{
+   text-align: center;
+}
+.product img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.add-to-cart {
+   width: 160px;
+   border: 1px solid hsl(12, 20%, 44%);
+   border-radius: 20px; 
+   background-color: white;  
+   text-align: center;
+   padding: 10px;
+   font-weight: 500;
+   position: absolute;  
+   left: 50px;
+   top:225px;
+  
+}
+
+.add-to-cart i {
+   color:hsl(13, 59%, 53%) ;
+   padding-right: 7px;
+}
+.product-info p {
+   color: hsl(14, 25%, 72%);
+   margin-top: 45px;
+}
+.product-info h5 {
+   margin-top: -15px;
+   
+}
+.product-info span {
+   color: hsl(13, 59%, 53%);
+   font-size: 18px;
+   margin-top: -7px;
+   display: block;
+   font-weight: 800;
+}
+.productInfo {
+   list-style-type:none ;
+   color: black;
+   margin-top: 35px;
+   position: relative;
+}
+.productInfo .p3 ,.productInfo .p4 {
+ margin-right: 130px;
+ margin-top: -12px;
+}
+.productInfo .p3 {
+   margin-right: 140px;
+   font-weight: 500;
+}
+.productInfo .p4 span {
+   margin-right: 4px;
+}
+.productInfo .p4 span:last-child {
+   font-weight: 500;
+}
+.line {
+   height: 1px;
+   width: 310px;
+   background-color: rgb(238, 237, 237);
+   margin-top: -5px;
+}
+.delete {
+   position: absolute;
+   color: rgb(197, 196, 196);
+   left: 290px;
+   top : 16px;
+   font-size: 20px;
+}
+.cart-content {
+   /* display: none; */
+}
+.confirm-order {
+   margin-top: 40px;
+   color: black;
+   display: none;
+}
+.confirm-order .total {
+   margin-left: 170px;
+   font-size: 20px;
+   font-weight: 700;
+}
+.confirm-order  button{
+   text-align: center;
+   background-color: hsl(13, 59%, 53%);
+   /* font-size: 20px; */
+   border: 0;
+   width: 250px;
+   height: 40px;
+   border-radius: 20px;
+   color: white;
+   margin-top: 5PX;
+}
