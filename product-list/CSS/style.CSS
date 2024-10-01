@@ -4,6 +4,7 @@
 .body {
    background-color: hsl(20, 50%, 98%);
    font-family: "Red Hat Text";   
+   position: relative;
 }
 .products{
    width: 90%;
@@ -47,6 +48,7 @@
   height: 250px;
   border-radius: 10px;
 }
+
 .add-to-cart {
    width: 160px;
    border: 1px solid hsl(12, 20%, 44%);
@@ -126,7 +128,7 @@
    font-size: 20px;
    font-weight: 700;
 }
-.confirm-order  button{
+.confirm-order  button , .submission button {
    text-align: center;
    background-color: hsl(13, 59%, 53%);
    /* font-size: 20px; */
@@ -137,3 +139,52 @@
    color: white;
    margin-top: 5PX;
 }
+.delete:hover {
+   color: black;
+}
+.submission{
+   display: none;
+ width: 300px;
+ position: absolute;
+ background-color: white;
+ font-size: 20px;
+ top: 320px;
+ left: 500px;
+ padding: 20px;
+ z-index: 2;
+ border-radius: 10px;
+}
+.submission i {
+   color: rgb(134, 201, 134);
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.submission .ph2 {
+   font-size: 15px;
+   margin-top: -10px;
+   margin-left: 5px;
+}
+.submission button {
+ width: 180px;
+ font-size: 16px;
+}
+.cover{
+   display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba( 0, 0, 0, 40%);
+  z-index: 1;
+}
+
+/* .Waffle img{
+  border: 3px solid hsl(13, 59%, 53%);
+}  */
+ .add {
+   background-color:hsl(13, 59%, 53%) ;
+} 
+
+/* .Waffle i {
+   color: rgba(250, 250, 250, 0.959);
+} */
+

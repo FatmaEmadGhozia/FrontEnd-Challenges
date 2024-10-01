@@ -13,21 +13,26 @@
 
 </head>
 <body class="body">
+  <div class="cover"></div>
      <div class="products d-flex flex-wrap">
       
        <div class="desserts-section">
         <h3 > Desserts </h3>
         <div class="products ">
 
-          <div class="parent1 d-flex flex-wrap">
+          <div class="parent1 d-flex">
 
                     <!-- product 1 -->
         
         <div class="Waffle product" id="1">
           <img src="./images/image-waffle-desktop.jpg" alt="waffle image not found" >
-          <div class="add-to-cart" onclick="AddToCart(this)" >
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span>Add to Cart</span>
+          <div class="add-to-cart " >
+            <i class="fa-solid fa-cart-shopping  " onclick="AddToCart(this)" ></i>
+            <span class="">Add to Cart</span>
+            
+            <i class="fa-solid fa-circle-minus me-4  fs-5 d-none"></i>
+            <span></span>
+            <i class="fa-solid fa-circle-plus ms-4  fs-5 d-none "></i>
           </div>
           <div class="product-info">
             <p>Waffle</p>
@@ -37,7 +42,9 @@
         </div>
 
 
-        <!-- product 2 -->
+
+
+                      <!-- product 2 -->
         <div class="Creme-Brulee product" id="2">
           <img src="./images/image-creme-brulee-desktop.jpg" alt="waffle image not found" >
           <div class="add-to-cart" onclick="AddToCart(this)">
@@ -49,13 +56,11 @@
             <h5>Vanilla Been Brulee</h5>
             <span class="price">$7.00</span>
           </div>
-
-
         </div>
 
 
 
-        <!-- product 3 -->
+                    <!-- product 3 -->
         <div class="Macaron product" id="3">
           <img src="./images/image-macaron-desktop.jpg" alt="waffle image not found" >
           <div class="add-to-cart" onclick="AddToCart(this)">
@@ -68,11 +73,25 @@
             <span class="price">$8.00</span>
           </div>
         </div>
-          </div>
+
+          </div>    
+          
 
 
-         <div class="parent2 d-flex flex-wrap" >
-        <!-- product 4 -->
+
+
+
+
+
+
+
+
+
+
+         <div class="parent2 d-flex" >
+
+
+                      <!-- product 4 -->
         <div class="Tiramisu product" id="4">
           <img src="./images/image-tiramisu-desktop.jpg" alt="waffle image not found" >
           <div class="add-to-cart" onclick="AddToCart(this)">
@@ -86,7 +105,10 @@
           </div>
         </div>
 
-        <!-- product 5 -->
+
+
+
+                        <!-- product 5 -->
         <div class="Baklava product" id="5">
           <img src="./images/image-baklava-desktop.jpg" alt="waffle image not found" >
           <div class="add-to-cart" onclick="AddToCart(this)">
@@ -99,7 +121,11 @@
             <span class="price">$4.00</span>
           </div>
         </div>
-        <!-- product 6 -->
+
+
+
+
+                             <!-- product 6 -->
         <div class="Pie product" id="6">
           <img src="./images/image-meringue-desktop.jpg" alt="waffle image not found" >
           <div class="add-to-cart" onclick="AddToCart(this)">
@@ -114,8 +140,27 @@
         </div>
 
          </div>
-        <div class="parent3 d-flex flex-wrap">
-          <!-- product 7 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="parent3 d-flex mb-5">
+
+
+
+                     <!-- product 7 -->
         <div class="Cake product" id="7">
           <img src="./images/image-cake-desktop.jpg" alt="waffle image not found" >
           <div class="add-to-cart" onclick="AddToCart(this)">
@@ -128,7 +173,13 @@
             <span class="price">$4.50</span>
           </div>
         </div>
-        <!-- product 8 -->
+
+
+
+
+
+
+                           <!-- product 8 -->
         <div class="Brownie  product" id="8">
           <img src="./images/image-brownie-desktop.jpg" alt="waffle image not found" >
           <div class="add-to-cart" onclick="AddToCart(this)">
@@ -142,7 +193,14 @@
           </div>
         </div>
 
-        <!-- product 9 -->
+
+
+
+
+
+
+
+                                  <!-- product 9 -->
         <div class="Panna-cotta product" id="9">
           <img src="./images/image-panna-cotta-desktop.jpg" alt="waffle image not found" >
           <div class="add-to-cart" onclick="AddToCart(this)">
@@ -157,26 +215,39 @@
         </div> 
         </div>          
        </div> 
+
      </div>
 
-     <!--  your cart -->
+
+
+
+
+                                      <!--  your cart -->
      <div class="your-cart">
       <p class="p1">Your Cart (<span>0</span>)</p>
       <div class="cart-items"></div>
       <div class="confirm-order ">
         <div class="d-flex">
         <p class="order"> Order Total </p>
-        <p class="total">$1234 </p> 
+        <p class="total"></p> 
         </div>
-        <button > Confirm Order </button>
+        <button class="btn1" > Confirm Order </button>
       </div>
       <div class="cart-content">
       <img src="./images/illustration-empty-cart.svg" alt="image not found">
       <p class="p2">Your Added items will appear here</p>
       </div>
+    
      </div>
+     <div class="submission">
+      <i class="fa-regular fa-circle-check"></i>
+      <p class="ph1"> Order is Confirmed </p>
+      <p class="ph2">We hope you enjoy your Food</p>
+      <button class="btn2"> Start New Order </button>
+     </div>
+     
   </div>
-             
+            
   <script src="./JS/script.js"></script> 
 </body>
 </html>
