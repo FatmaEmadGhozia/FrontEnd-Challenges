@@ -180,11 +180,20 @@
 /* .Waffle img{
   border: 3px solid hsl(13, 59%, 53%);
 }  */
- .add {
+ /* .add {
    background-color:hsl(13, 59%, 53%) ;
-} 
+}  */
 
-/* .Waffle i {
+ .add-to-cart .color {
    color: rgba(250, 250, 250, 0.959);
-} */
+}
 
+.add-to-cart .minus, .add-to-cart .plus {
+   display: none;
+}
+.add-to-cart .plus {
+   margin-left: 40px;
+}
+/* .count {
+   margin-left: auto;
+} */

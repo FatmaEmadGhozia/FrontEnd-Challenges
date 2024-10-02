@@ -15,8 +15,8 @@ function AddToCart(clickedButton) {   // clicked button is the tag where i click
 
    // find the parent of the clicked button (the product )
     let product = clickedButton.closest('.product');
-    var numID = Number(product.id);
-    let numberOfProducts = numberOfClickedProducts(product);
+    let numID = Number(product.id);
+    var numberOfProducts = numberOfClickedProducts(product);
       // return the array that contains number of products
       var productImg = product.querySelector('img');
       
@@ -62,22 +62,15 @@ function AddToCart(clickedButton) {   // clicked button is the tag where i click
     
     });
 
-    productImg.addEventListener('click' ,function(){
-        product.querySelector('i').classList.toggle('d-none');
-        product.querySelector('span').classList.toggle('d-none');
-    });
+  
 
-
-
-
-    
      }  else {
     
-      let quantityElement = existingProduct.querySelector('.p4 span:first-child');
+      var quantityElement = existingProduct.querySelector('.p4 span:first-child');
       let totalpriceElement = existingProduct.querySelector('.p4 span:last-child');
             // Update the quantity and total price
       quantityElement.innerHTML = `${numberOfProducts[numID]}X`;
-      totalpriceElement.innerHTML = `$${(totalPrice)}`;
+      totalpriceElement.innerHTML = `$${(totalPrice.toFixed(1))}`;
       sumArray[numID] = totalPrice;
       calculateTotalPrice(); 
   
@@ -178,4 +171,46 @@ function viewOrRemove() {
 
   });
   
+   function clickedImage (imageSelector,id) {
+     let img = document.querySelector( imageSelector);  
+     let numID = id; 
+     let addToCART = img.parentElement.querySelector('.add-to-cart');
 
+
+     img.addEventListener('click' ,function(){
+    
+      img.style.border ='3px solid hsl(13, 59%, 53%)';
+      addToCART.style.backgroundColor = 'hsl(13, 59%, 53%)';
+      addToCART.querySelector('i').style.display ='none';
+      addToCART.querySelector('span').style.display ='none';
+      addToCART.style.display = 'flex';
+      addToCART.querySelector('.minus').style.display ='block';
+      addToCART.querySelector('.plus').style.display ='block';
+    
+      
+      addToCART.querySelector('.count').innerHTML=` ${arr[numID]}`
+
+     });
+    
+
+  }
+   clickedImage('.Waffle img',1);
+   clickedImage('.Creme img',2);
+   clickedImage('.Macaron img',3);
+   clickedImage('.Tiramisu img',4);
+   clickedImage('.Baklava img',5);
+   clickedImage('.Pie img',6);
+   clickedImage('.Cake img',7);
+   clickedImage('.Brownie  img',8);
+   clickedImage('.Panna-cotta img',9); 
+
+
+ 
+// function plusAndMinus ( image) {
+
+//   document.querySelector(image).addEventListener('click' , function(){
+//      let img = image.closest('img')
+//   });
+
+
+// }
